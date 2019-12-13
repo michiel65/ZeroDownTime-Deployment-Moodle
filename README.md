@@ -13,4 +13,6 @@ the moodle image is based on the binami image then you can edit the Dockerfile a
 
 https://github.com/bitnami/bitnami-docker-moodle
 
-After the deployment, you can acces to the Moodle service by using http://localhost/ from the browser. the traefik dashboard will be available at http://localhost:8080
+After the deployment, you can acces to the Moodle service by using http://localhost/ from the browser. 
+
+The traefik dashboard will be available at http://localhost:8080
