@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+    traefik:
+        image: traefik:v1.7.16
+        networks:
+            - webgateway
+        ports:
+            - "8080:8080"
+            - "80:80"
+            - "443:443"
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - ./traefik.toml:/traefik.toml
+
+networks:
+    webgateway:
+        driver: bridge
